@@ -1,6 +1,5 @@
-    <?php
-     
-    namespace RD\Providers;
+<?php
+namespace RD\Providers;
      
 use Ceres\Caching\NavigationCacheSettings;
 use Ceres\Caching\SideNavigationCacheSettings;
