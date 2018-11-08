@@ -2,11 +2,31 @@
      
     namespace RD\Providers;
      
-    use IO\Helper\TemplateContainer;
-    use IO\Helper\ComponentContainer;
-    use Plenty\Plugin\Events\Dispatcher;
-    use Plenty\Plugin\ServiceProvider;
-    use Plenty\Plugin\Templates\Twig;
+use Ceres\Caching\NavigationCacheSettings;
+use Ceres\Caching\SideNavigationCacheSettings;
+use Ceres\Config\CeresConfig;
+use Ceres\Contexts\CategoryContext;
+use Ceres\Contexts\CategoryItemContext;
+use Ceres\Contexts\GlobalContext;
+use Ceres\Contexts\ItemSearchContext;
+use Ceres\Contexts\ItemWishListContext;
+use Ceres\Contexts\OrderConfirmationContext;
+use Ceres\Contexts\OrderReturnContext;
+use Ceres\Contexts\PasswordResetContext;
+use Ceres\Contexts\SingleItemContext;
+use Ceres\Extensions\TwigStyleScriptTagFilter;
+use Ceres\Hooks\CeresAfterBuildPlugins;
+use IO\Extensions\Functions\Partial;
+use IO\Helper\CategoryKey;
+use IO\Helper\CategoryMap;
+use IO\Helper\TemplateContainer;
+use IO\Services\ContentCaching\Services\Container;
+use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
+use Plenty\Modules\Plugin\Events\AfterBuildPlugins;
+use Plenty\Plugin\ServiceProvider;
+use Plenty\Plugin\Templates\Twig;
+use Plenty\Plugin\Events\Dispatcher;
+use Plenty\Plugin\ConfigRepository;
      
     class RDServiceProvider extends ServiceProvider
     {
