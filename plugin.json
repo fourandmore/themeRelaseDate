@@ -1,16 +1,16 @@
     {
-        "name"                  :"Theme",
+        "name"                  :"RD",
         "description"           :"Basic theme plugin",
-        "namespace"             :"Theme",
+        "namespace"             :"RD",
         "author"                :"Your name",
         "keywords"              : ["theme", "Ceres", "template"],
         "type"                  :"theme",
         "require"               : [],
-        "serviceProvider"       :"Theme\\Providers\\ThemeServiceProvider",
+        "serviceProvider"       :"RD\\Providers\\RDServiceProvider",
         "dataProviders"         :
         [
             {
-                "key"           :"Theme\\Containers\\ThemeContainer",
+                "key"           :"RD\\Containers\\RDContainer",
                 "name"          :"Dark background",
                 "description"   :"Change the background colour of the Ceres template"
             }
