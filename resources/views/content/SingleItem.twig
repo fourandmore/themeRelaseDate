@@ -95,10 +95,12 @@
                         <span>
                             ${ currentVariation.variation.availability.names.name }
                         </span>
-						<div v-if="new Date(currentVariation.variation.releasedAt) > Date.now()">
-    Verfügbar ab: ${ new Date(currentVariation.variation.releasedAt).toLocaleDateString() }
-</div> 
-                    </span>
+					</span>
+					<!-- Erscheinungsdatum -->
+					<div v-if="new Date(currentVariation.variation.releasedAt) > Date.now()">
+    					Verfügbar ab: ${ new Date(currentVariation.variation.releasedAt).toLocaleDateString() }
+					</div> 
+					<!-- Ende Erscheinungsdatum -->
 					<div class="row m-y-1">
 
 
