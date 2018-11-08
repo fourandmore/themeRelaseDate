@@ -9,6 +9,10 @@
         "serviceProvider"       :"RD\\Providers\\RDServiceProvider",
         "dataProviders"         :
         [
-
+            {
+                "key"           :"RD\\Containers\\RDContainer",
+                "name"          :"Dark background",
+                "description"   :"Change the background colour of the Ceres template"
+            }
         ]
     }
