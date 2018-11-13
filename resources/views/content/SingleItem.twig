@@ -90,12 +90,6 @@
                     </div>
 
                     <slot name="AfterPrice"></slot>
-					
-					                    <!-- Versandkosten -->
-                    <dt :class="{ 'font-weight-bold': !showNetPrices }">
-                    {{ trans("Ceres::Template.basketShippingCosts") }} ({{ trans("Ceres::Template.basketGross") }})
-                </dt>
-                    <!-- Versandkosten Ende -->
 
                     <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
                         <span>
