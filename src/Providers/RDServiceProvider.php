@@ -26,9 +26,9 @@ use Plenty\Plugin\Templates\Twig;
         {
             $eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
             {
-                if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
+                if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem_Details')
                 {
-                    $container->setNewComponentTemplate('RD::content.SingleItem');
+                    $container->setNewComponentTemplate('RD::content.SingleItem_Details');
                 }
             }, self::PRIORITY);
         }
