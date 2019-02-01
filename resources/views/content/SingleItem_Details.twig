@@ -79,9 +79,10 @@
                                 ${ currentVariation.variation.availability.names.name }
                             </span>
                         </span>
+	
 	<!-- Erscheinungsdatum -->
 	<div v-if="new Date(currentVariation.variation.releasedAt) > Date.now()">
-    Verfügbar ab: ${ new Date(currentVariation.variation.releasedAt).toLocaleDateString() }
+    	Verfügbar ab: ${ new Date(currentVariation.variation.releasedAt).toLocaleDateString() }
 	</div> 
 	<!-- Ende Erscheinungsdatum -->
 
